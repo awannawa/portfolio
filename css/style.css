@@ -1,5 +1,6 @@
 .jumbotron {
-  background-image: url(../img/intro-bg3.png);
+  /* background-image: url(../img/intro-bg3.png); */
+  background-image: url("https://drive.google.com/thumbnail?id=1xn7j0B_AsTYf6icw6haFGSaVwbKdWhsu&sz=s4000");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -26,7 +27,7 @@
 .slider-area {
   position: relative;
 }
-.default-header{
+.default-header {
   width: 100%;
   background: rgba(255, 255, 255, 0.85);
   position: relative;
@@ -144,17 +145,19 @@
 /* sampe sini card atas */
 
 /*bg pojok kanan kiri atas bawah*/
-.sideatasbawah{
+.sideatasbawah {
   height: 100%;
   width: 100%;
-  background: url(../img/sidekananatas.png), url(../img/sidekiriatas.png), url(../img/sidekananbawah.png), url(../img/sidekiribawah.png);
-  background-position: top -75px right -50px, top -75px left -50px, bottom -75px right -50px, bottom -75px left -50px;
+  background: url(../img/sidekananatas.png), url(../img/sidekiriatas.png),
+    url(../img/sidekananbawah.png), url(../img/sidekiribawah.png);
+  background-position: top -75px right -50px, top -75px left -50px,
+    bottom -75px right -50px, bottom -75px left -50px;
   background-repeat: no-repeat;
   position: relative;
   z-index: 1;
 }
 
-.sideatas{
+.sideatas {
   height: 100%;
   width: 100%;
   background: url(../img/sidekananatas.png), url(../img/sidekiriatas.png);
@@ -163,7 +166,7 @@
   position: relative;
   z-index: 1;
 }
-.sidebawah{
+.sidebawah {
   height: 100%;
   width: 100%;
   background: url(../img/sidekananbawah.png), url(../img/sidekiribawah.png);
@@ -217,7 +220,8 @@
   background-color: #fff;
 }
 
-#skill .btn:focus,.btn:active {
+#skill .btn:focus,
+.btn:active {
   outline: none !important;
   box-shadow: none;
 }
@@ -251,11 +255,13 @@
   align-content: center;
 }
 
-#portfolio .sideatasbawah{
+#portfolio .sideatasbawah {
   height: 100%;
   width: 100%;
-  background: url(../img/sidekananatas.png), url(../img/sidekiriatas.png), url(../img/sidekananbawah.png), url(../img/sidekiribawah.png);
-  background-position: top -75px right -50px, top -75px left -50px, bottom -75px right -50px, bottom -75px left -50px;
+  background: url(../img/sidekananatas.png), url(../img/sidekiriatas.png),
+    url(../img/sidekananbawah.png), url(../img/sidekiribawah.png);
+  background-position: top -75px right -50px, top -75px left -50px,
+    bottom -75px right -50px, bottom -75px left -50px;
   background-repeat: no-repeat;
   position: relative;
   padding: 1px 1px 1px 1px;
@@ -289,8 +295,9 @@
   color: #cacbcc;
 }
 
-#portfolio .btn:focus,.btn:active {
-  box-shadow: 0 0 0 .2rem rgba(211,211,211);
+#portfolio .btn:focus,
+.btn:active {
+  box-shadow: 0 0 0 0.2rem rgba(211, 211, 211);
 }
 
 #portfolio .btn-primary {
@@ -347,8 +354,9 @@
 #contact .g-recaptcha {
   padding-bottom: 10px;
 }
-#contact .btn:focus,.btn:active {
-  box-shadow: 0 0 0 .2rem rgba(211,211,211);
+#contact .btn:focus,
+.btn:active {
+  box-shadow: 0 0 0 0.2rem rgba(211, 211, 211);
 }
 #contact .text-danger {
   color: #e87e04;
@@ -503,7 +511,6 @@ a:focus,
   background: #a8a8a8;
 }
 
-
 @media (max-width: 576px) {
   .sharesocial {
     width: 100%;
@@ -555,9 +562,6 @@ a:focus,
 #footer a:hover {
   color: rgba(255, 255, 255, 0.5);
 }
-
-
-
 
 /* HAMBURGER */
 /* Icon 1 */
