@@ -1,26 +1,26 @@
 /*hamburger*/
-$(document).ready(function() {
-  $(".first-button").on("click", function() {
+$(document).ready(function () {
+  $(".first-button").on("click", function () {
     $(".animated-icon1").toggleClass("open");
   });
-  $(".second-button").on("click", function() {
+  $(".second-button").on("click", function () {
     $(".animated-icon2").toggleClass("open");
   });
-  $(".third-button").on("click", function() {
+  $(".third-button").on("click", function () {
     $(".animated-icon3").toggleClass("open");
   });
 });
 /*hamburger*/
 
 /*Scroll ilang*/
-$(function() {
+$(function () {
   var documentEl = $(document),
     fadeElem = $(".scroll-ilang");
 
-  documentEl.on("scroll", function() {
+  documentEl.on("scroll", function () {
     var currScrollPos = documentEl.scrollTop();
 
-    fadeElem.each(function() {
+    fadeElem.each(function () {
       var $this = $(this),
         elemOffsetTop = $this.offset().top;
       if (currScrollPos > elemOffsetTop)
@@ -31,14 +31,14 @@ $(function() {
 /*Scroll ilang*/
 
 /*smoth scroll*/
-$(".page-scroll").on("click", function(e) {
+$(".page-scroll").on("click", function (e) {
   var tujuan = $(this).attr("href");
 
   var elemenTujuan = $(tujuan);
 
   $("html,body").animate(
     {
-      scrollTop: elemenTujuan.offset().top - 0
+      scrollTop: elemenTujuan.offset().top - 0,
     },
     1250,
     "easeInOutExpo"
@@ -48,12 +48,20 @@ $(".page-scroll").on("click", function(e) {
 });
 /*END smoth scroll*/
 
-$(document).ready(function() {
+$(document).ready(function () {
   var filterizd = $(".filtr-container").filterizr({
-    filter:"satu",
+    filter: "satu",
   });
-    $(".filterListItem").on("click", function() {
+  $(".filterListItem").on("click", function () {
     $(".filterListItem").removeClass("active");
     $(this).addClass("active");
+  });
+});
+
+window.addEventListener("load", function () {
+  const images = document.querySelectorAll(".gdrive-image");
+  images.forEach(function (img) {
+    const imageId = img.getAttribute("idLink");
+    img.src = `https://drive.google.com/thumbnail?id=${imageId}&sz=s1080`;
   });
 });

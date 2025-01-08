@@ -70,6 +70,7 @@
   width: 100%;
   height: 100%;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  transform: scaleX(-1);
 }
 
 .default-header .header-left {
@@ -510,7 +511,11 @@ a:focus,
 .sharesocial ul li a.abumuda {
   background: #a8a8a8;
 }
-
+@media (max-width: 991px) {
+  .item-thumbnail img {
+    transform: scaleX(1);
+  }
+}
 @media (max-width: 576px) {
   .sharesocial {
     width: 100%;
