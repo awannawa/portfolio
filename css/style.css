@@ -470,7 +470,7 @@ a:focus,
 }
 
 /* Social Share */
-.sharesocial {
+.mySosMed {
   background: #f8f9fa;
   position: fixed;
   top: 35%;
@@ -478,12 +478,12 @@ a:focus,
   z-index: 999;
 }
 
-.sharesocial ul {
+.mySosMed ul {
   padding: 0px;
   margin: 0px;
 }
 
-.sharesocial ul li {
+.mySosMed ul li {
   list-style: none;
   height: 40px;
   width: 40px;
@@ -493,22 +493,22 @@ a:focus,
   line-height: 2em;
 }
 
-.sharesocial ul li a {
+.mySosMed ul li a {
   height: 40px;
   width: 40px;
   color: #f8f9fa;
   display: inline-block;
 }
 
-.sharesocial ul li a:hover {
+.mySosMed ul li a:hover {
   opacity: 0.7;
 }
 
-.sharesocial ul li a.abutua {
+.mySosMed ul li a.abutua {
   background: #6c757d;
 }
 
-.sharesocial ul li a.abumuda {
+.mySosMed ul li a.abumuda {
   background: #a8a8a8;
 }
 @media (max-width: 991px) {
@@ -517,7 +517,7 @@ a:focus,
   }
 }
 @media (max-width: 576px) {
-  .sharesocial {
+  .mySosMed {
     width: 100%;
     background: #f8f9fa;
     z-index: 10;
@@ -527,20 +527,20 @@ a:focus,
     position: fixed;
   }
 
-  .sharesocial ul {
+  .mySosMed ul {
     padding: 0;
     margin: 0 auto;
     width: 100%;
   }
 
-  .sharesocial ul li {
+  .mySosMed ul li {
     float: left;
     width: 20% !important;
     color: #343a40;
     text-align: center;
   }
 
-  .sharesocial ul li a {
+  .mySosMed ul li a {
     color: #f8f9fa;
     display: inline-block;
     width: 100%;
