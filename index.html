@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -11,153 +9,61 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="geo.country" content="ID" />
     <meta name="geo.placename" content="Indonesia" />
-
-    <!-- Primary Meta Tags -->
     <link rel="icon" href="img/fav.png" />
-    <title>Portfolio Ahmad Rizqi Kurniawan</title>
-    <meta name="title" content="Ahmad Rizqi Kurniawan - Portfolio" />
+    <title>Portfolio Awannawa</title>
+    <meta name="title" content="awannawa - Portfolio" />
     <meta
       name="description"
-      content="This site is designed for Ahmad Rizqi Kurniawan's CV and Portfolios"
+      content="This site is designed for Awan's CV and Portfolios"
     />
+    <meta name="author" content="Ahmad Rizqi Kurniawan" />
+    <meta name="keywords" content="awannawa, portfolio, cv, awan" />
+    <meta name="robots" content="index, follow" />
 
-    <!-- PRELOADS -->
     <script
       src="https://kit.fontawesome.com/bf407ca414.js"
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
-
-    <!-- CSS -->
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    <!-- Font Awesome CSS dll -->
-    <link
-      rel="stylesheet"
-      href="css/style.css"
-      as="style"
-      media="all"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-    <link rel="stylesheet" type="text/css" href="css/aos.css" />
-    <!-- END OF CSS -->
-
-    <style>
-      html,
-      body {
-        background-color: none;
-      }
-
-      .lazyload,
-      .main-container {
-        display: none;
-      }
-    </style>
-
-    <!-- end -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-
-  <body data-target="#page-top" data-spy="scroll">
-    <header>
-      <!--Header content -->
-      <h1 class="lazyload">Hi, Ini Website Awannawa</h1>
-    </header>
-
-    <main class="main-container">
-      <!-- Main Content -->
-      <p>Halaman ini berisikan portfolio Ahmad Rizqi Kurniawan.</p>
-    </main>
-    <!-- End Pre loader page-->
-
-    <!-- navbar -->
-    <nav id="nav" class="navbar navbar-expand-md bg-secondary fixed-top"></nav>
-    <!-- end of navbar -->
-
-    <!-- TOP -->
-    <div id="page-top"></div>
-    <!-- end of top -->
-
-    <!-- Tentang -->
-    <section id="tentang" class="sideatas"></section>
-    <!-- End Tentang -->
-
-    <!-- Resume -->
-    <section id="skill" style="overflow: hidden"></section>
-    <!-- End Resume -->
-
-    <!-- Portfolio -->
-    <section id="portfolio"></section>
-    <!--  End Portfolio  -->
-
-    <!-- bagin halaman -->
-    <section id="mySosMed" class="mySosMed"></section>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img
+          src="img/maintenance.png"
+          alt="Maintenance"
+          class="maintenance-img"
+        />
+        <h1>"This page is no longer updated."</h1>
+        <p class="countdown">
+          Hang tight – you'll be redirected to the latest info in : <br />
+          <span id="countdown">5</span>
+          seconds...
+        </p>
+        <button>
+          <span>
+            <a href="https://awannawa.github.io/portofolio">Click Here</a>
+          </span>
+        </button>
+        <p style="margin-top: 5px"><i>(If Page not Redirecting)</i></p>
+      </div>
+    </div>
 
     <!-- footer -->
-    <section id="footer"></section>
+    <footer>
+      <p class="text-center" style="margin-bottom: 1rem">
+        Developed and Designed by
+      </p>
+      <p class="text-center" style="margin-bottom: 0px">
+        <a href="https://awannawa.github.io/portofolio/" class="text-white">
+          <strong>Ahmad Rizqi Kurniawan</strong>
+        </a>
+      </p>
+      <p class="text-center">Copyright <i class="fa fa-copyright"></i> 2025</p>
+    </footer>
     <!-- end footer -->
 
-    <!-- Optional JQ -> plugin -> framework -> custome harus sesuai urutan biar jalannnnnnnn-->
-    <script>
-      $(document).ready(function () {
-        $("#nav").load("./models/navbar/index.html");
-      });
-    </script>
-    <script>
-      $(document).ready(function () {
-        $("#page-top").load("./pages/biodatasingkat/index.html", function () {
-          updateImages(); // Panggil fungsi setelah konten dimuat
-        });
-      });
-    </script>
-    <script>
-      $(document).ready(function () {
-        $("#tentang").load("./pages/education/index.html", function () {
-          updateImages(); // Panggil fungsi setelah konten dimuat
-        });
-      });
-    </script>
-    <script>
-      $(document).ready(function () {
-        $("#skill").load("./pages/skill/index.html", function () {
-          updateImages(); // Panggil fungsi setelah konten dimuat
-        });
-      });
-    </script>
-    <script>
-      $(document).ready(function () {
-        $("#portfolio").load("./pages/portfolio/index.html", function () {
-          updateImages(); // Panggil fungsi setelah konten dimuat
-        });
-      });
-    </script>
-    <script>
-      $(document).ready(function () {
-        $("#mySosMed").load("./pages/sosmed/index.html", function () {
-          updateImages(); // Panggil fungsi setelah konten dimuat
-        });
-      });
-    </script>
-
-    <script>
-      $(document).ready(function () {
-        $("#footer").load("./pages/footer/index.html", function () {
-          updateImages(); // Panggil fungsi setelah konten dimuat
-        });
-      });
-    </script>
-
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
-    <script type="text/javascript" src="js/jquery.filterizr.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1200,
-      });
-    </script>
-    <script type="text/javascript" src="js/awan.js"></script>
+    <script src="js/awan.js"></script>
   </body>
 </html>
