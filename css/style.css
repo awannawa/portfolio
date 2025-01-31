@@ -28,9 +28,11 @@ body {
 }
 
 .maintenance-img {
-  width: 100px;
+  width: 256px;
   height: auto;
   margin-bottom: 1em;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+  border-radius: 5px;
 }
 
 h1 {
@@ -53,8 +55,8 @@ button {
   align-items: center;
   cursor: pointer;
   border: none;
-  background-color: #8a8989;
-  border-radius: 10px;
+  background-color: #747474;
+  border-radius: 5px;
   color: #ffffff; /* Change text color to white */
   font-weight: 300;
   font-size: 18px;
@@ -62,6 +64,7 @@ button {
   z-index: 0;
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Adjust the values as needed */
 }
 
 button:hover {

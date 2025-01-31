@@ -1,5 +1,5 @@
 window.onload = function () {
-  let countdown = 5;
+  let countdown = 7;
   const countdownElement = document.getElementById("countdown");
 
   const interval = setInterval(function () {
@@ -11,3 +11,13 @@ window.onload = function () {
     }
   }, 1000);
 };
+
+//load image from gdrive
+function updateImages() {
+  const images = document.querySelectorAll(".gdrive-image");
+  images.forEach(function (img) {
+    const imageId = img.getAttribute("idLink");
+    img.src = `https://drive.google.com/thumbnail?id=${imageId}&sz=s1080`;
+  });
+}
+window.addEventListener("load", updateImages);
